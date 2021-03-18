@@ -12,7 +12,6 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -87,23 +86,23 @@
 	}
 
 	.row.\30 \25 > * {
-		padding: 0 0 0 0em;
+		padding: 0 0 0 0;
 	}
 
 	.row.\30 \25 {
-		margin: 0 0 -1px 0em;
+		margin: 0 0 -1px 0;
 	}
 
 	.row.uniform.\30 \25 > * {
-		padding: 0em 0 0 0em;
+		padding: 0 0 0 0;
 	}
 
 	.row.uniform.\30 \25 {
-		margin: 0em 0 -1px 0em;
+		margin: 0 0 -1px 0;
 	}
 
 	.row > * {
-		padding: 0 0 0 2em;
+		padding: 0 0 0 2;
 	}
 
 	.row {
@@ -3201,10 +3200,10 @@
 /* Banner */
 
 	#banner {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
+		background-image: url("./images/overlay.png"), -moz-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
+		background-image: url("./images/overlay.png"), -webkit-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
+		background-image: url("./images/overlay.png"), -ms-linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
+		background-image: url("./images/overlay.png"), linear-gradient(45deg, #2255FF 0%, #1e2021 100%);
 		background-size: 50px 50px, cover;
 		color: rgba(255, 255, 255, 0.5);
 		padding: 6em 0 4em;
@@ -3289,4 +3288,3 @@
 
 		}
 
-		}
