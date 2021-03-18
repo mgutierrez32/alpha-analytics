@@ -7,7 +7,7 @@
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
-$slick-font-path: "./fonts/" !default;
+$slick-font-path: "assets/fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
@@ -23,7 +23,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 @function slick-image-url($url) {
     @if function-exists(image-url) {
-        @return image-url($url);
+        @return slick-image-url($url);
     }
     @else {
         @return url($slick-loader-path + $url);
@@ -32,7 +32,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 @function slick-font-url($url) {
     @if function-exists(font-url) {
-        @return font-url($url);
+        @return slick-font-url($url);
     }
     @else {
         @return url($slick-font-path + $url);
@@ -43,7 +43,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-list {
     .slick-loading & {
-        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+        background: #fff slick-image-url("assets/slick/ajax-loader.gif") center center no-repeat;
     }
 }
 
@@ -66,8 +66,8 @@ $slick-opacity-not-active: 0.25 !default;
     display: block;
     height: 20px;
     width: 20px;
-    line-height: 0px;
-    font-size: 0px;
+    line-height: 0;
+    font-size: 0;
     cursor: pointer;
     background: transparent;
     color: transparent;
@@ -158,8 +158,8 @@ $slick-opacity-not-active: 0.25 !default;
             height: 20px;
             width: 20px;
             outline: none;
-            line-height: 0px;
-            font-size: 0px;
+            line-height: 0;
+            font-size: 0;
             color: transparent;
             padding: 5px;
             cursor: pointer;
