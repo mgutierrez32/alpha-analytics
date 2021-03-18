@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="assets/css/main.css" />
 <head>
     <meta charset="UTF-8">
-    <title>Thank You!</title>
+    <title>Map Search</title>
 
     <!-- load stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
@@ -28,7 +27,7 @@
                 <nav class="navbar navbar-expand-lg narbar-light">
                     <a class="navbar-brand mr-auto" href="#">
                         <img src="images/logosmall.png" alt="Site logo">
-                        Alpha Analytics
+                        comparebnb
                     </a>
                     <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -36,13 +35,19 @@
                     <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="comparebnb.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#top">Meet the Team</a>
+                                <a class="nav-link" href="#top">Map Search <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Presentation</a>
+                                <a class="nav-link" href="Infographics.html">Infographics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Poster.html">Poster</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Wireframes.html">Wireframes</a>
                             </li>
                         </ul>
                     </div>
@@ -52,26 +57,37 @@
     </div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="text-align: center; font-size: 30px;">Thank you for contacting us. <br><br>Your message has been received and someone will be in touch with you soon. </p>
+<section id="tableau" class="wrapper">
+    <script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script>
+    <div class='tableauPlaceholder' style='width: 1000px; height: 827px; display: block; margin-left: auto; margin-right: auto;'>
+        <object class='tableauViz' width='1000' height='827' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='&#47;t&#47;winter2021alphaanalytics' />
+            <param name='name' value='DataViz_FinalProject&#47;Dashboard2' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='showAppBanner' value='false' />
+        </object>
+    </div>
+</section>
 
+<hr style="width:50%;text-align:center;margin-left:25%">
 
-
-<ul class="actions">
-    <li><a href="index.html" class="button alt">Return Home</a></li>
-</ul>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+<section id="tableau" class="wrapper">
+    <script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script>
+    <div class='tableauPlaceholder' style='width: 1000px; height: 827px; display: block; margin-left: auto; margin-right: auto;'>
+        <object class='tableauViz' width='1000' height='827' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='&#47;t&#47;winter2021alphaanalytics' />
+            <param name='name' value='DataViz_FinalProject&#47;Dashboard' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='showAppBanner' value='false' />
+        </object>
+    </div>
+</section>
 <!-- load JS files -->
 <script src="assets/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
 <script src="assets/js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->
@@ -82,20 +98,20 @@
 <script>
 
 
-    function setPageNav(){
-        if($(window).width() > 991) {
-            $('#tm-top-bar').singlePageNav({
-                currentClass:'active',
-                offset: 79
-            });
+        function setPageNav(){
+            if($(window).width() > 991) {
+                $('#tm-top-bar').singlePageNav({
+                    currentClass:'active',
+                    offset: 79
+                });
+            }
+            else {
+                $('#tm-top-bar').singlePageNav({
+                    currentClass:'active',
+                    offset: 65
+                });
+            }
         }
-        else {
-            $('#tm-top-bar').singlePageNav({
-                currentClass:'active',
-                offset: 65
-            });
-        }
-    }
 
 
 
@@ -106,13 +122,9 @@
                 $(".tm-top-bar").addClass("active");
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
-                $(".tm-top-bar").removeClass("active");
+                $(".tm-top-bar").removeClass("inactive");
             }
         });
-
-        // // Date Picker
-        // const pickerCheckIn = datepicker('#inputCheckIn');
-        // const pickerCheckOut = datepicker('#inputCheckOut');
 
         // Close navbar after clicked
         $('.nav-link').click(function () {
@@ -124,7 +136,6 @@
     });
 
 </script>
-
 
 
 </body>
