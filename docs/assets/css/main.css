@@ -2681,6 +2681,7 @@
 	.wrapper {
 		padding: 5em 0 3em 0;
 		position: relative;
+
 	}
 
 		.wrapper > .inner {
@@ -2688,6 +2689,7 @@
 			margin-right: auto;
 			width: 80em;
 			max-width: 800%;
+
 		}
 
 		.wrapper.alt {
