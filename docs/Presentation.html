@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html lang="en">
-<link rel="stylesheet" href="assets/css/main.css" />
 <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
+    <title>Alpha Analytics</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +27,7 @@
             <div class="row">
 
                 <nav class="navbar navbar-expand-lg narbar-light">
-                    <a class="navbar-brand mr-auto" href="#">
+                    <a class="navbar-brand mr-auto" href="index.html">
                         <img src="images/AlphaAnalyticsIcon.png" alt="Site logo">
                         Alpha Analytics
                     </a>
@@ -40,11 +39,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#top">Meet the Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Presentation.html">Presentation</a>
+                                <a class="nav-link" href="#top">Presentation</a>
                             </li>
                         </ul>
                     </div>
@@ -55,59 +52,19 @@
 </div>
 
 
-<!-- Two -->
-<section id="two" class="wrapper style2 alt">
-    <div class="inner">
-        <div class="spotlight">
-            <div class="image">
-                <img src="https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/images/Pic01.jpg" alt="" />
-            </div>
-            <div class="content">
-                <h3>Miguel Gutierrez</h3>
-                <p>Mr. Gutierrez has experience working with large amounts of data as part of research
-                    projects in both his alma mater and at a research internship at the University of Texas.
-                    During his time at UT Austin, Mr. Gutierrez developed an algorithm to analyze stellar
-                    spectra. The results from the analysis are currently in process of being published in
-                    a peer-reviewed journal.  </p>
-            </div>
-        </div>
-        <div class="spotlight">
-            <div class="image">
-                <img src="https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/images/Pic02.jpg" alt="" />
-            </div>
-            <div class="content">
-                <h3>Ashourrina Henshaw</h3>
-                <p>Ms. Henshaw has four years professional experience in the consulting industry.
-                    Before working as a Data Analyst with Alpha Analytics, she was with Quandary
-                    Consulting Group, where she developed custom applications and successfuly
-                    managed client relationships.</p>
-            </div>
-        </div>
-        <div class="spotlight">
-            <div class="image">
-                <img src="https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/images/Pic03.jpg" alt="" />
-            </div>
-            <div class="content">
-                <h3>Yue Shen</h3>
-                <p>Mr. Shen has three years professional experience in the healthcare research industry.
-                    He has worked with the Center for Gene Therapy at Nationwide Children's Hospital
-                    before joining Alpha Analytics.</p>
-            </div>
-        </div>
-        <div class="spotlight">
-            <div class="image">
-                <img src="https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/images/Pic04.jpg" alt="" />
-            </div>
-            <div class="content">
-                <h3>Clara Zhang</h3>
-                <p>Ms. Zhang has three years professional experience in the consulting  industry.
-                    Before working with Alpha  Analytics, she was an industry analyst at iResearch Consulting,
-                    where she participated more than 20 user research, competitor analysis, and IPO projects with
-                    a total contract value of approximately 1MM USD.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<p style = "text-align: center; color:#003B4D;font-size:40px;">Test PDF Embed</p>
+
+<div id="adobe-dc-view" style="height: 720px; width: 1000px; display: block; margin-left: auto; margin-right: auto;'"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function(){
+        var adobeDCView = new AdobeDC.View({clientId: "aef7ce19526d426db6bbdee13d20e1a1", divId: "adobe-dc-view"});
+        adobeDCView.previewFile({
+            content:{location: {url: "https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/PDFs/Final Project Presentation.pdf"}},
+            metaData:{fileName: "Final Project Presentation.pdf"}
+        }, {embedMode: "SIZED_CONTAINER"});
+    });
+</script>
 
 
 <!-- Scripts -->

@@ -1483,7 +1483,7 @@
 	}
 
 		a:hover {
-			color: #00BC8A !important;
+			color: #E1E0DF !important;
 			text-decoration: none;
 		}
 
@@ -1511,7 +1511,7 @@
 		}
 
 		h7 {
-			color: Blue;
+			color: #;
 			text-decoration: none;
 		}
 
@@ -1533,6 +1533,9 @@
 
 	h6 {
 		font-size: 0.7em;
+	}
+	h7 {
+		font-size: 1.75em;
 	}
 
 	sub {
@@ -2207,8 +2210,9 @@
 
 			ul.checklist li {
 				text-decoration: none;
+				text-align: left;
 				margin-bottom: 1.5em;
-				padding-left: 0;
+				padding-left: 500;
 			}
 
 				ul.checklist li:before {
@@ -2682,8 +2686,8 @@
 		.wrapper > .inner {
 			margin-left: auto;
 			margin-right: auto;
-			width: 70em;
-			max-width: 100%;
+			width: 80em;
+			max-width: 800%;
 		}
 
 		.wrapper.alt {
@@ -3212,7 +3216,7 @@
 		#banner h2 {
 			font-size: 2.5em;
 			line-height: 1.4;
-			margin-bottom: 0;
+			margin-bottom: 0;checklist
 			color: #fff;
 		}
 
