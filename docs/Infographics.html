@@ -80,7 +80,10 @@
 
     <br>
     <br>
+
+
         <p style = "text-align: center; color:#003B4D;font-size:40px;">Infographics</p>
+    <div id="adobe-dc-view" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"></div>
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script type="text/javascript">
         document.addEventListener("adobe_dc_view_sdk.ready", function(){
@@ -88,9 +91,11 @@
             adobeDCView.previewFile({
                 content:{location: {url: "https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/PDFs/DataViz Infographic - Airbnb Chicago.pdf"}},
                 metaData:{fileName: "DataViz Infographic - Airbnb Chicago.pdf"}
-            }, {embedMode: "LIGHT_BOX"});
+            }, {embedMode: "IN_LINE"});
         });
     </script>
+
+    <div id="adobe-dc-view2" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"></div>
     <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script type="text/javascript">
         document.addEventListener("adobe_dc_view_sdk.ready", function(){
@@ -98,7 +103,7 @@
             adobeDCView.previewFile({
                 content:{location: {url: "https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/PDFs/DataViz Infographic - Chicago City Guide.pdf"}},
                 metaData:{fileName: "DataViz Infographic - Chicago City Guide.pdf"}
-            }, {embedMode: "LIGHT_BOX"});
+            }, {embedMode: "IN_LINE"});
         });
     </script>
 
@@ -153,6 +158,18 @@
 
         // // Update the current year in copyright
         // $('.tm-current-year').text(new Date().getFullYear());
+    });
+
+
+    $(document).ready(function() {
+        /* Apply fancybox to multiple items */
+
+        $("a.iframe").fancybox({
+            'width': 640, // or whatever you want
+            'height': 480, // or whatever you want
+            'type': 'iframe'
+        });
+
     });
 
 </script>
