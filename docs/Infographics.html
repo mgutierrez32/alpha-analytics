@@ -81,20 +81,18 @@
     <br>
     <br>
 
-
-        <p style = "text-align: center; color:#003B4D;font-size:40px;">Infographics</p>
-<!--    <div id="adobe-dc-view" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"></div>-->
-
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
     <script type="text/javascript">
-        document.addEventListener("adobe_dc_view_sdk.ready", function(){
-            var adobeDCView = new AdobeDC.View({clientId: "aef7ce19526d426db6bbdee13d20e1a1"});
-            adobeDCView.previewFile({
-                content:{location: {url: "https://raw.githubusercontent.com/mgutierrez32/alpha-analytics/master/docs/PDFs/DataViz Infographic - Airbnb Chicago.pdf"}},
-                metaData:{fileName: "DataViz Infographic - Airbnb Chicago.pdf"}
-            }, {embedMode: "LIGHT_BOX", showPageControls: false});
-        });
+        let file_1 = "DataViz Infographic - Airbnb Chicago.pdf";
+        let file_2 = "DataViz Infographic - Chicago City Guide.pdf";
     </script>
+    <p style = "text-align: center; color:#003B4D;font-size:40px;">Infographics</p>
+<!--    <div id="adobe-dc-view" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"></div>-->
+    <div class="container" style="margin-left: auto; margin-right: auto;">
+        <button type="button alt" id="view-pdf-btn" onclick="previewFile(file_1)" disabled >View Infograph</button>
+        <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+        <button type="button alt" id="view-pdf-btn_2" onclick="previewFile(file_2)" disabled >View Infograph</button>
+        <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    </div>
 
 <!--    <div id="adobe-dc-view2" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"></div>-->
 <!--    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>-->
@@ -117,6 +115,7 @@
 <script src="assets/js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
 <script src="assets/js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
 <script src="assets/slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+<script src="assets/js/pdf-embed-api_lightbox.js"></script>        <!-- https://github.com/adobe/pdf-embed-api-samples -->
 <script>
 
 
